@@ -1,7 +1,7 @@
 function Nav() {
     return(
         <>
-        <img src="logo.png" alt="logo" />
+        <img src="logo.png" className='logo' alt="logo" />
            <nav className="nav">
             <ul>
             <li><a href='#home'>Home</a></li>

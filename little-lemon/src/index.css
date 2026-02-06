@@ -6,10 +6,12 @@
 
 body{
   display:grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   gap: 20px;
   min-height: 100vh;
   background-color:bisque;
+  font-family: Karla, serif;
+
 }
 
 header{
@@ -18,16 +20,19 @@ header{
   padding: 1rem 2rem;
 }
 
-header > img{
+.logo {
   align-self: flex-start;
+  transition: transform 1.5s;
+}
 
+.logo:hover{
+  transform: rotate(360deg);
 }
 
 .nav {
   background-color: white;
   border-radius: 20px;
   font-size: 20px;
-  font-family:'Karla', serif;
   align-self: flex-end;
   margin: 10px;
   font-weight: bold;
@@ -44,11 +49,22 @@ header > img{
     padding: 20px;
 }
 
+a:hover{
+  color: green;
+}
+
+a:active{
+  color:red;
+}
+
+a:focus{
+  color:blue;
+}
+
 .hero{
   display: flex;
   background-color: #495E57;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
   gap: 2rem;
 }
@@ -62,24 +78,20 @@ header > img{
 .hero_text h1 {
   text-align: left;
   color: #F4CE14;
-  margin:10px;
-  padding-left: 1rem;
+  margin-left: 1rem;
   font-family: Markazi Text, serif;
   font-size: 64px;
 }
 
 .hero_text h2 {
   text-align: left;
-  margin:10px;
-  padding-left: 1rem;
+  margin-left: 1rem;
   font-family: Markazi Text, serif;
   font-size: 40px;
 }
  .hero_text p{
   text-align: left;
-  margin:10px;
-  padding-left: 1rem;
-  font-family: Karla, serif;
+  margin-left: 1rem;
   font-size: 18px;
 }
 
@@ -94,12 +106,15 @@ header > img{
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: Karla, serif;
   font-size: 20px;
   width:10rem;
   margin-left: auto;
   font-weight: bold;
+  transition: transform 0.5s;
+  }
 
+  .button_hero:hover{
+    transform:scale(1.2);
   }
 
  .hero img{
@@ -111,7 +126,7 @@ header > img{
 
 .highlights{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 1rem;
   
@@ -123,16 +138,13 @@ header > img{
 }
 
 .highlights h2{
-    font-family: Karla, serif;
     font-size: 18px;
     font-weight: bold;}
 
   .highlights p{
-    font-family: Karla, serif;
     font-size: 16px;
   }
   .highlights h3{
-        font-family: Karla, serif;
     font-size: 18px;
     font-weight: bold;
     color: red;}
@@ -140,7 +152,6 @@ header > img{
 
 
 .main_highlights h1{
-  font-family: Karla, serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -150,7 +161,7 @@ header > img{
   align-items: center; /* wyrównanie pionowe */
   margin: 2rem;
   justify-content: center;
-  gap: 20rem;
+  gap: 10rem;
 }
 
   .button_main {
@@ -158,7 +169,6 @@ header > img{
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: Karla, serif;
   font-size: 20px;
   width:10rem;
   font-weight: bold;
@@ -177,11 +187,9 @@ header > img{
 
 }
 article h2{
-  font-family: Karla, serif;
   font-size: 18px;}
 
 article p{
-  font-family: Karla, serif;
   font-size: 16px;
   }
 
@@ -193,15 +201,20 @@ article p{
 }
 
 .testimonials h1{
-  font-family: Karla, serif;
   font-size: 18px;
+}
+
+.testimonials_form{
+  display: flex;
+  gap:20px;
+  justify-content: center;
+  padding: 3rem;
 }
   .button_testimonials {
   background-color: #F4CE14;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-family: Karla, serif;
   font-size: 20px;
   width:10rem;
 
@@ -224,7 +237,6 @@ article p{
   .about h3{
     text-align: left;
     align-self: center;
-    font-family: Karla, serif;
     font-size: 18px;
   }
   .about article{
@@ -266,6 +278,5 @@ footer {
   }
 
   footer h1 {
-          font-family: Karla, serif;
           font-size: 18px;
   }
