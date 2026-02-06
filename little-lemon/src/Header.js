@@ -1,9 +1,12 @@
+import Nav from './Nav';
+import Hero from './Hero';
+
 function Header() {
     return(
-     <header>
-        <img src='/logo.png' alt='logo_little_lemon'/>
-    </header>
+        <header>
+            <Nav/>
+            <Hero/>
+        </header>
     )
 }
-
 export default Header;
