@@ -20,6 +20,7 @@ header{
 
 header > img{
   align-self: flex-start;
+
 }
 
 .nav {
@@ -28,6 +29,8 @@ header > img{
   font-size: 20px;
   font-family:'Karla', serif;
   align-self: flex-end;
+  margin: 10px;
+  font-weight: bold;
 }
 
 .nav ul{
@@ -95,12 +98,14 @@ header > img{
   font-size: 20px;
   width:10rem;
   margin-left: auto;
+  font-weight: bold;
 
   }
 
  .hero img{
   display: block;
   align-self: center;
+  box-shadow: 0 4px 10px wheat;
     }
 
 
@@ -109,14 +114,38 @@ header > img{
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
   padding: 1rem;
+  
 }
 
-.main h1{
+.highlights img{
+  box-shadow:0 4px 10px #495E57;
+  border-radius: 20px;
+}
+
+.highlights h2{
+    font-family: Karla, serif;
+    font-size: 18px;
+    font-weight: bold;}
+
+  .highlights p{
+    font-family: Karla, serif;
+    font-size: 16px;
+  }
+  .highlights h3{
+        font-family: Karla, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;}
+  
+
+
+.main_highlights h1{
   font-family: Karla, serif;
   font-size: 16px;
+  font-weight: bold;
 }
 
-.main {
+.main_highlights {
   display: flex;
   align-items: center; /* wyrównanie pionowe */
   margin: 2rem;
@@ -132,7 +161,8 @@ header > img{
   font-family: Karla, serif;
   font-size: 20px;
   width:10rem;
-  
+  font-weight: bold;
+
 
   }
 
@@ -142,8 +172,8 @@ header > img{
   padding: 10px;
   border-radius: 10px;
   flex-direction: column;
-  gap: 30px;
-  text-align: center;
+  gap: 10px;
+  text-align: left;
 
 }
 article h2{
@@ -188,6 +218,7 @@ article p{
     height:15rem;
     object-fit: cover;
     border-radius: 20px ;
+    box-shadow: 2px 5px 10px #495E57;
   }
 
   .about h3{
