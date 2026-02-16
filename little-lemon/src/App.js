@@ -14,6 +14,7 @@ function App() {
     <>
       <Header/>
           <Routes>
+            <Route path='/' element={<Home/>}/>  {/* domyślna strona główna*/}
             <Route path='/home' element={<Home/>}/>
             <Route path="/about" element={<Chicago/>}/>
             <Route path='/menu' element={<Specials/>}/>
