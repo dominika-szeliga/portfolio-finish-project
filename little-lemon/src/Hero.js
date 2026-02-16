@@ -1,3 +1,5 @@
+import chief from './Assets/chief.png';
+
 function Hero() {
     return(
             <section className="hero">
@@ -9,8 +11,8 @@ function Hero() {
                  <button type='submit' className="button_hero">Reserve a table</button>
                 </div>
                 <div className="hero_image">
-                
-                <img src='chief.png' alt='chief'/>
+
+                <img src={chief} alt='chief'/>
                 </div>
 
              </section>

@@ -1,7 +1,9 @@
+import logo from './Assets/logo.png';
+
 function Nav() {
     return(
         <>
-        <img src="logo.png" className='logo' alt="logo" />
+        <img src={logo} className='logo' alt="logo" />
            <nav className="nav">
             <ul>
             <li><a href='#home'>Home</a></li>

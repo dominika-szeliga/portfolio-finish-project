@@ -1,7 +1,9 @@
+import logo2 from './Assets/logo2.png';
+
 function Footer() {
     return(
         <footer>
-            <img src='logo2.png' alt='logo'/>
+            <img src={logo2} alt='logo'/>
             <section className="footer_section">
                 <article className="footer_article">
                     <h1>Doormat Navigation</h1>
