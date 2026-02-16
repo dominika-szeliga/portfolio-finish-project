@@ -1,16 +1,16 @@
 import chief from './Assets/chief.png';
 
-function Hero() {
+function CallToAction() {
     return(
-            <section className="hero">
-                <div className="hero_text">
+            <section className="callToAction">
+                <div className="callToAction_text">
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>We are a family owned Mediterranean restaurant, <br />
                 focused on traditional recipes served with a modern twist. </p>
-                 <button type='submit' className="button_hero">Reserve a table</button>
+                 <button type='submit' className="button_callToAction">Reserve a table</button>
                 </div>
-                <div className="hero_image">
+                <div className="callToAction_image">
 
                 <img src={chief} alt='chief'/>
                 </div>
@@ -18,4 +18,4 @@ function Hero() {
              </section>
     )
 }
-export default Hero;
+export default CallToAction;

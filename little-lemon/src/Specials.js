@@ -3,15 +3,15 @@ import bruschetta from './Assets/bruschetta.png';
 import lemon_dessert from './Assets/lemon_dessert.png';
 import delivery_icon from './Assets/delivery_icon.png';
 
-function Highlights() {
+function Specials() {
     return(
 
         <>
-            <section className="main_highlights">
+            <section className="home_specials">
                 <h1>This week's specials!</h1>
-                <button type="submit" className="button_main">Online menu</button>
+                <button type="submit" className="button_home">Online menu</button>
               </section>
-            <section className="highlights">
+            <section className="specials">
             <article>
               <img src={salad} alt='salad'/>
             <h2>Greek salad</h2>
@@ -42,4 +42,4 @@ function Highlights() {
     )
 }
 
-export default Highlights;
+export default Specials;

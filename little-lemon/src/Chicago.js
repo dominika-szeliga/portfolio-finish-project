@@ -2,9 +2,9 @@ import chief2 from './Assets/chief2.jpg';
 import oysters from './Assets/oysters.jpg';
 
 
-function About() {
+function Chicago() {
     return(
-        < section className="about">
+        <section className="chicago">
                 <article>
                 <h3>Little Lemon is a Mediterranean restaurant based in Chicago,<br />
                 Illinois, that focuses on traditional recipes served with a modern twist.<br />
@@ -20,4 +20,4 @@ function About() {
     )
 }
 
-export default About;
+export default Chicago;

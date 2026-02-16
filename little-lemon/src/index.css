@@ -38,30 +38,30 @@ header{
   font-weight: bold;
 }
 
-.nav ul{
+.nav-list {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
 }
 
-.nav li {
+.nav-item {
     display: flex;
     padding: 20px;
 }
 
-a:hover{
+.nav-item:hover{
   color: green;
 }
 
-a:active{
+.nav-item:active{
   color:red;
 }
 
-a:focus{
+.nav-item:focus{
   color:blue;
 }
 
-.hero{
+.callToAction{
   display: flex;
   background-color: #495E57;
   justify-content: center;
@@ -69,13 +69,13 @@ a:focus{
   gap: 2rem;
 }
 
-.hero_text {
+.callToAction_text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem; /* odstęp między h1, h2 i p */
 }
 
-.hero_text h1 {
+.callToAction_text h1 {
   text-align: left;
   color: #F4CE14;
   margin-left: 1rem;
@@ -83,25 +83,25 @@ a:focus{
   font-size: 64px;
 }
 
-.hero_text h2 {
+.callToAction_text h2 {
   text-align: left;
   margin-left: 1rem;
   font-family: Markazi Text, serif;
   font-size: 40px;
 }
- .hero_text p{
+ .callToAction_text p{
   text-align: left;
   margin-left: 1rem;
   font-size: 18px;
 }
 
-.hero_image {
+.callToAction_image {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-  .button_hero {
+  .button_callToAction {
   background-color: #F4CE14;
   border: none;
   border-radius: 10px;
@@ -113,18 +113,18 @@ a:focus{
   transition: transform 0.5s;
   }
 
-  .button_hero:hover{
+  .button_callToAction:hover{
     transform:scale(1.2);
   }
 
- .hero img{
+ .callToAction img{
   display: block;
   align-self: center;
   box-shadow: 0 4px 10px wheat;
     }
 
 
-.highlights{
+.specials{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -132,31 +132,31 @@ a:focus{
   
 }
 
-.highlights img{
+.specials img{
   box-shadow:0 4px 10px #495E57;
   border-radius: 20px;
 }
 
-.highlights h2{
+.specials h2{
     font-size: 18px;
     font-weight: bold;}
 
-  .highlights p{
+  .specials p{
     font-size: 16px;
   }
-  .highlights h3{
+  .specials h3{
     font-size: 18px;
     font-weight: bold;
     color: red;}
   
 
 
-.main_highlights h1{
+.home_specials h1{
   font-size: 16px;
   font-weight: bold;
 }
 
-.main_highlights {
+.home_specials {
   display: flex;
   align-items: center; /* wyrównanie pionowe */
   margin: 2rem;
@@ -164,7 +164,7 @@ a:focus{
   gap: 10rem;
 }
 
-  .button_main {
+  .button_home {
   background-color: #F4CE14;
   border: none;
   border-radius: 10px;
@@ -193,24 +193,24 @@ article p{
   font-size: 16px;
   }
 
-.testimonials{
+.customersSay{
   display: flex;
   gap:20px;
   justify-content: center;
   padding: 3rem;
 }
 
-.testimonials h1{
+.customersSay h1{
   font-size: 18px;
 }
 
-.testimonials_form{
+.customersSay_form{
   display: flex;
   gap:20px;
   justify-content: center;
   padding: 3rem;
 }
-  .button_testimonials {
+  .button_customersSay {
   background-color: #F4CE14;
   border: none;
   border-radius: 10px;
@@ -220,13 +220,13 @@ article p{
 
   }
 
-.about{
+.chicago{
   display: flex;
   justify-content: left;
   padding: 2rem;
 }
 
-.about img{
+.chicago img{
     width:15rem;
     height:15rem;
     object-fit: cover;
@@ -234,12 +234,12 @@ article p{
     box-shadow: 2px 5px 10px #495E57;
   }
 
-  .about h3{
+  .chicago h3{
     text-align: left;
     align-self: center;
     font-size: 18px;
   }
-  .about article{
+  .chicago article{
     display: flex;
     flex-flow: row wrap;
     background-color: bisque;
@@ -279,4 +279,8 @@ footer {
 
   footer h1 {
           font-size: 18px;
+  }
+
+  .footer-list{
+    line-height: 0px;
   }

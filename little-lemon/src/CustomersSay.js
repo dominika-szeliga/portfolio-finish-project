@@ -1,8 +1,8 @@
-function Testimonials() {
+function CustomersSay() {
     return(
-        <section className="testimonials">
+        <section className="customersSay">
             <h1>Testimonials</h1>
-            <form method='post' className="testimonials_form">
+            <form method='post' className="customersSay_form">
                 <div>
                     <label htmlFor='user_name'>Name</label><br />
                     <input type='text' name='user_name' id='user_name' required minlength='3' maxlength='15'/>
@@ -27,10 +27,10 @@ function Testimonials() {
                 </fieldset>
             <label htmlFor='review'>Review</label>
             <textarea id='review' name='review' rows='3' cols='20' maxlength='100' required></textarea>
-            <button type='submit' className="button_testimonials">Submit</button>
+            <button type='submit' className="button_customersSay">Submit</button>
             </form>
         </section>
     )
 }
 
-export default Testimonials;
+export default CustomersSay;
