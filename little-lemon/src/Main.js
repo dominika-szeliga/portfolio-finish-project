@@ -4,7 +4,7 @@ import CustomersSay from './CustomersSay';
 import CallToAction from './CallToAction';
 
 
-function Home() {
+function Main() {
     return(
         <main>
         <CallToAction/>
@@ -15,7 +15,7 @@ function Home() {
     )
 }
 
-export default Home;
+export default Main;
 
 
 

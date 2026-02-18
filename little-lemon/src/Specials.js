@@ -7,9 +7,9 @@ function Specials() {
     return(
 
         <>
-            <section className="home_specials">
+            <section className="specials_main">
                 <h1>This week's specials!</h1>
-                <button type="submit" className="button_home">Online menu</button>
+                <button type="submit" className="button_main">Online menu</button>
               </section>
             <section className="specials">
             <article>

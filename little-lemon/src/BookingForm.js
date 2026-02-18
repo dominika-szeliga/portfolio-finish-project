@@ -40,7 +40,7 @@ const clearForm =()=>{
         </div>
             <div className="Field">
             <label htmlFor='booking_time'>Booking time <sup>*</sup> </label>
-            <select id='booking_time' value={time} onChange={(e)=>{setTime(e.target.value)}}>
+            <select id='booking_time' name='booking_time' value={time} onChange={(e)=>{setTime(e.target.value)}}>
             {availableTimes.map(el=>{return (
                     <option value={el} key={el}>{el}</option>
                 )

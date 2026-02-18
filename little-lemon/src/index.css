@@ -151,12 +151,12 @@ header{
   
 
 
-.home_specials h1{
+.specials_main h1{
   font-size: 16px;
   font-weight: bold;
 }
 
-.home_specials {
+.specials_main {
   display: flex;
   align-items: center; /* wyrównanie pionowe */
   margin: 2rem;
@@ -164,7 +164,7 @@ header{
   gap: 10rem;
 }
 
-  .button_home {
+  .button_main {
   background-color: #F4CE14;
   border: none;
   border-radius: 10px;
