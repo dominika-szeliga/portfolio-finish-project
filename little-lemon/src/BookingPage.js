@@ -1,6 +1,9 @@
+import BookingForm from "./BookingForm";
+
+
 function BookingPage() {
     return(
-        <h1>RESERVE A TABLE</h1>
+        <BookingForm/>
     )
 }
 export default BookingPage;

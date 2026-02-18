@@ -6,8 +6,7 @@ import Chicago from './Chicago';
 import Specials from './Specials';
 import OrderOnline from './OrderOnline';
 import BookingPage from './BookingPage';
-import Login from './Login';
-
+import Login from './Login'
 
 function App() {
   return (
