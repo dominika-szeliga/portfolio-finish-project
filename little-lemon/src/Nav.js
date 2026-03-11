@@ -15,6 +15,7 @@ function Nav() {
             <li><Link to='/reservations' className='nav-item'>Reservations</Link></li>
             <li><Link to='/order_online' className='nav-item'>Order Online</Link></li>
             <li><Link to='/login' className='nav-item'>Login</Link></li>
+            <li><Link to='/confirmed' className='nav-item'>Confirmed</Link></li>
           </ul>
         </nav>
         </>

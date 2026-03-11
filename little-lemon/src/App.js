@@ -6,7 +6,9 @@ import Chicago from './Chicago';
 import Specials from './Specials';
 import OrderOnline from './OrderOnline';
 import BookingPage from './BookingPage';
-import Login from './Login'
+import Login from './Login';
+import ConfirmedBooking from './ConfirmedBooking';
+
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
             <Route path='/reservations' element={<BookingPage/>}/>
             <Route path='/order_online' element={<OrderOnline/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/confirmed' element={<ConfirmedBooking/>}/>
           </Routes>
       <Footer/>
     </>
