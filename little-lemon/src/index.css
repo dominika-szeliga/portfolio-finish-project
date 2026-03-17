@@ -284,3 +284,8 @@ footer {
   .footer-list{
     line-height: 0px;
   }
+
+  input:invalid,
+  select:invalid {
+    border: 2px solid red;
+  }
