@@ -43,8 +43,8 @@ function CustomersSay() {
                     </label>
                 </fieldset>
             <label htmlFor='review'>Review</label>
-            <textarea id='review' name='review' rows='3' cols='20' maxlength='100' required></textarea>
-            <button type='submit' className="button_customersSay">Submit</button>
+            <textarea id='review' name='review' rows='3' cols='20' maxLength='100' required></textarea>
+            <button type='submit' className="button_customersSay" aria-label='Submit opinion'>📩</button>
             </form>
         </section>
     )

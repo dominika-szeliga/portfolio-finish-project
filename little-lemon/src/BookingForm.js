@@ -24,7 +24,10 @@ function BookingForm({ times, dispatch, submitForm }) {
         const today = new Date();
         today.setHours(0, 0, 0, 0); //ustawiam dzisiejszą datę na początek dnia (00:00)
         return (
-            guests > 0 && time && date && new Date(date) >= today);
+            guests > 0 &&
+            time !== '' &&
+            date !=='' &&
+            new Date(date) >= today);
     }
 
     const clearForm = () => {
@@ -42,7 +45,7 @@ function BookingForm({ times, dispatch, submitForm }) {
                 <fieldset>
                     <div className="Field">
                         <label htmlFor='booking_date'>Booking date <sup>*</sup> </label>
-                        <input type='date' name='booking_date' id='booking_date' required aria-required='true' value={date}
+                        <input type='date' name='booking_date' id='booking_date' required value={date}
                             onChange={(e) => {
                                 setDate(e.target.value);
                                 const newDate = new Date(e.target.value);
@@ -52,7 +55,7 @@ function BookingForm({ times, dispatch, submitForm }) {
                     </div>
                     <div className="Field">
                         <label htmlFor='booking_time'>Booking time <sup>*</sup> </label>
-                        <select id='booking_time' name='booking_time' required aria-required='true' value={time} onChange={(e) => { setTime(e.target.value) }}>
+                        <select id='booking_time' name='booking_time' required value={time} onChange={(e) => { setTime(e.target.value) }}>
 
                             <option value="">Select time</option>
                             {times.map(el => {
@@ -64,7 +67,7 @@ function BookingForm({ times, dispatch, submitForm }) {
                     </div>
                     <div className="Field">
                         <label htmlFor='booking_guests'>Number of guests <sup>*</sup> </label>
-                        <input type='number' id='booking_guests' name='booking_guests' min='1' max='10' placeholder='1' required aria-required='true' value={guests} onChange={(e) => { setGuests(Number(e.target.value)) }} />
+                        <input type='number' id='booking_guests' name='booking_guests' min='1' max='10' placeholder='1' required value={guests} onChange={(e) => { setGuests(Number(e.target.value)) }} />
                     </div>
                     <div className="Field">
                         <label htmlFor='booking_occasion'>Occasion </label>
