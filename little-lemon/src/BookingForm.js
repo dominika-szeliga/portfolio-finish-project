@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { isFormValid } from "./validation";
 
 
 function BookingForm({ times, dispatch, submitForm }) {
@@ -20,7 +21,7 @@ function BookingForm({ times, dispatch, submitForm }) {
         clearForm();
     }
 
-    const getIsFormValid = () => {
+    /*const getIsFormValid = () => {
         const today = new Date();
         today.setHours(0, 0, 0, 0); //ustawiam dzisiejszą datę na początek dnia (00:00)
         return (
@@ -28,7 +29,8 @@ function BookingForm({ times, dispatch, submitForm }) {
             time !== '' &&
             date !=='' &&
             new Date(date) >= today);
-    }
+    } */
+   //aby zachować spójność z testami korzystam z mojej wydzielonej funkcji isFormValid()
 
     const clearForm = () => {
         setDate('');
@@ -43,6 +45,22 @@ function BookingForm({ times, dispatch, submitForm }) {
             <form style={{ display: 'grid', maxWidth: '350px', gap: '20px', fontSize: '20px', padding: '1rem' }} onSubmit={handleSubmit}>
                 <h1>Booking Form</h1>
                 <fieldset>
+                    <div className="Field">
+                        <label htmlFor="first_name">First name <sup>*</sup></label>
+                        <input type='text' name='first_name' id='first_name' minLength='3' maxLength='10' required/>
+                    </div>
+                    <div className='Field'>
+                        <label htmlFor="last_name">Last name <sup>*</sup></label>
+                        <input type='text' name='last_name' id='last_name' minLength='3' maxLength='12' required/>
+                    </div>
+                    <div className="Field">
+                        <label htmlFor="email">Email <sup>*</sup></label>
+                        <input type='email' name='email' id='email' required/>
+                    </div>
+                    <div className='Field'>
+                        <label htmlFor="phone_number">Phone number <sup>*</sup></label>
+                        <input type='tel' name='phone_number' id='phone_number' minLength='9' required/>
+                    </div>
                     <div className="Field">
                         <label htmlFor='booking_date'>Booking date <sup>*</sup> </label>
                         <input type='date' name='booking_date' id='booking_date' required value={date}
@@ -78,7 +96,7 @@ function BookingForm({ times, dispatch, submitForm }) {
                         </datalist>
                     </div>
                     <div>
-                        <button type='submit' disabled={!getIsFormValid()} >Make Your reservation</button>
+                        <button type='submit' disabled={!isFormValid(guests,time,date)} >Make Your reservation</button>
                     </div>
                 </fieldset>
 

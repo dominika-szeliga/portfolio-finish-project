@@ -55,6 +55,34 @@ test('input occasion accepts data from datalist', ()=>{
   expect(inputOccasion).toHaveAttribute('list', 'datalist')
 })
 
+test('input first name has got an attribute required, minLength, maxLength',()=>{
+  const firstNameInput=screen.getByLabelText(/first name/i);
+  expect(firstNameInput).toHaveAttribute('required');
+  expect(firstNameInput).toHaveAttribute('minLength','3');
+  expect(firstNameInput).toHaveAttribute('maxLength', '10');
+})
+
+test('input last name has got an attribute required, minLength, maxLength',()=>{
+  const lastNameInput=screen.getByLabelText(/last name/i);
+  expect(lastNameInput).toHaveAttribute('required');
+  expect(lastNameInput).toHaveAttribute('minLength','3');
+  expect(lastNameInput).toHaveAttribute('maxLength', '12');
+})
+
+test('input email has got an attribute required and type email', ()=>{
+  const emailInput=screen.getByLabelText(/email/i);
+  expect(emailInput).toHaveAttribute('required');
+  expect(emailInput).toHaveAttribute('type','email');
+})
+
+test('input phone numer has got an attribute required, type tel and minLength',()=>{
+  const phoneNumberInput=screen.getByLabelText(/phone number/i);
+  expect(phoneNumberInput).toHaveAttribute('required');
+  expect(phoneNumberInput).toHaveAttribute('type', 'tel');
+  expect(phoneNumberInput).toHaveAttribute('minLength', '9');
+
+})
+
   test('submit button has got an attribute disabled', ()=>{
     const submitButton=screen.getByRole('button', {name:/make your reservation/i});
     expect(submitButton).toBeDisabled();
@@ -110,4 +138,3 @@ describe('isFormValid',()=>{
     expect(isFormValid(4,'20:00','2000-03-10')).toBe(false);
   })
 })
-
