@@ -1,6 +1,6 @@
 function Login() {
     return(
-        <button type='submit'>Log in</button>
+        <button type='button'>Log in</button>
     )
 }
 export default Login;

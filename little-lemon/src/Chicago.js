@@ -12,7 +12,7 @@ function Chicago() {
                 and their menu consists of 12-15 items that change seasonally.<br />
                 The restaurant has a rustic and casual atmosphere with moderate prices,<br />
                  making it a popular place to eat any time of day.</h3>
-                 <img src={chief2} alt='chief'/>
+                 <img src={chief2} alt='restaurant chief'/>
                  <img src={oysters} alt='oysters'/>
 
                  </article>

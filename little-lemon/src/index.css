@@ -289,3 +289,39 @@ footer {
   select:invalid {
     border: 2px solid red;
   }
+
+  @media (max-width: 768px) {
+  /* NAV */
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*CallToAction */
+  .callToAction {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* SPECIALS HEADER */
+  .specials_main {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  /* TESTIMONIALS */
+  .customersSay {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+

@@ -2,14 +2,22 @@ import salad from './Assets/salad.png';
 import bruschetta from './Assets/bruschetta.png';
 import lemon_dessert from './Assets/lemon_dessert.png';
 import delivery_icon from './Assets/delivery_icon.png';
+import { useNavigate } from 'react-router-dom';
 
 function Specials() {
+
+const navigate=useNavigate();
+
+const goToMenu=()=>{
+  navigate('/menu');
+}
+
     return(
 
         <>
             <section className="specials_main">
                 <h1>This week's specials!</h1>
-                <button type="submit" className="button_main">Online menu</button>
+                <button type="button" className="button_main" onClick={goToMenu}>Online menu</button>
               </section>
             <section className="specials">
             <article>
@@ -33,7 +41,7 @@ function Specials() {
             <h3>Extra price 5.00$</h3>
             <p>This comes straight from
           grandma’s recipe book every last ingredient has been sourced and is as authenics as can be imagined.
-          Order a delivery <img src={delivery_icon}/></p>
+          Order a delivery <img src={delivery_icon} alt='icon'/></p>
           </article>
           </section>
           </>
